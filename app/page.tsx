@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useAuth } from "./contexts/AuthContexts";
 
 const navigation = [
   { name: "Product", href: "#" },
@@ -13,6 +14,7 @@ const navigation = [
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  // const { user } = useAuth();
 
   return (
     <div className="bg-white">
