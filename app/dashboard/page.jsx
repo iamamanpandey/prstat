@@ -1,6 +1,8 @@
 
 // import { GoogleAuthProvider } from "firebase/auth";
 
+import ReactCalendar from "../components/calendar";
+
 const DashboardPage =( ) =>{
 
   return (
@@ -14,6 +16,7 @@ const DashboardPage =( ) =>{
         <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
           Dashboard Page
         </h2>
+        <ReactCalendar/>
       </div>
     </div>
   );
