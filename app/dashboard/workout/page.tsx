@@ -15,6 +15,7 @@ const WorkoutPage = () => {
       <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
         Workouts
       </h2>
+      <div className="text-center">Or use Previous Templates</div>
       <div className="flex ">
         <button
           type="submit"

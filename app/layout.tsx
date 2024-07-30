@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { AuthProvider } from "./contexts/AuthContexts";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,11 +15,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full bg-white">
-      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <link
+        href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+        rel="stylesheet"
+        type="text/css"
+      />
       <script src="https://cdn.tailwindcss.com"></script>
-      <body className={`${inter.className} h-full`}>
-        <AuthProvider> {children}</AuthProvider>
-      </body>
+      <body className={`${inter.className} h-full`}>{children}</body>
     </html>
   );
 }
