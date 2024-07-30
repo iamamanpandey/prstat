@@ -1,0 +1,22 @@
+/* components/CalendarStrip.css */
+
+.calendar-strip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #3343ce;
+  }
+  
+  .calendar {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .highlight {
+    background-color: yellow !important;
+  }
+  
